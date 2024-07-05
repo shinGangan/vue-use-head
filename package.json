@@ -50,7 +50,8 @@
     "test": "nuxi prepare examples/nuxt3 && vitest",
     "test:e2e": "vitest tests/e2e",
     "release": "kanpai",
-    "lint": "eslint \"**/*.{ts,vue,json,yml,tsx}\" --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
     "vue": ">=2.7 || >=3"
@@ -62,7 +63,7 @@
     "@unhead/vue": "^1.7.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.41.3",
+    "@nuxt/eslint-config": "^0.3.13",
     "@nuxt/kit": "3.7.2",
     "@nuxt/test-utils": "3.7.2",
     "@vitejs/plugin-vue": "^4.3.4",
@@ -70,7 +71,7 @@
     "@vue/compiler-sfc": "^3.3.4",
     "@vue/server-renderer": "^3.3.4",
     "cheerio": "1.0.0-rc.12",
-    "eslint": "^8.49.0",
+    "eslint": "^9.6.0",
     "execa": "^8.0.1",
     "get-port-please": "^3.1.1",
     "jsdom": "^22.1.0",
